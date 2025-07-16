@@ -2,6 +2,13 @@ using System.ComponentModel.DataAnnotations;
 
 namespace AuctionsAPI.DTOs;
 
+/// <summary>
+/// Represents the data transfer object used to create a new auction entry.
+/// </summary>
+/// <remarks>
+/// This DTO contains all the required fields necessary for creating an auction,
+/// including details about the item to be auctioned and the auction's parameters.
+/// </remarks>
 public class CreateAuctionDto
 {
     /// <summary>

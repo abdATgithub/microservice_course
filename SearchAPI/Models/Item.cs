@@ -1,16 +1,13 @@
-namespace AuctionsAPI.DTOs;
+using MongoDB.Entities;
+
+namespace SearchAPI.Models;
 
 /// <summary>
-/// Represents a data transfer object (DTO) for an auction, including details about
-/// the auction itself, the associated item, and relevant metadata.
+/// Represents an item listed for auction, including details about its seller, status,
+/// bidding information, and vehicle-specific attributes.
 /// </summary>
-public class AuctionDto
+public class Item : Entity
 {
-    /// <summary>
-    /// Gets or sets the unique identifier for the auction.
-    /// </summary>
-    public Guid Id { get; set; }
-
     /// <summary>
     /// Gets or sets the minimum price required for the auction to be successful.
     /// </summary>

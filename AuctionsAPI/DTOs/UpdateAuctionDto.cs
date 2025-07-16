@@ -1,5 +1,9 @@
 namespace AuctionsAPI.DTOs;
 
+/// <summary>
+/// Represents the data transfer object used to update the details of an auction in the system.
+/// Contains properties to modify specific attributes of the auction item.
+/// </summary>
 public class UpdateAuctionDto
 {
     /// <summary>
